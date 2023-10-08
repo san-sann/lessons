@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" >
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		>
+		<link
+			rel="stylesheet"
+			href="css/style.css"
+		>
+		<title>CSS-властивості блоків</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-margin1"><p>margin з окремими значеннями та "схлопуванням" до нижнього елементу;</p></div>
+			<div class="header-margin2"><p>margin: з_усіх_сторін та "схлопуванням" до верхнього елементу;</p></div>
+			<div class="header-margin3"><p>margin: зверху_знизу зправа_зліва;</p></div>
+			<div class="header-margin4"><p>margin: зверху зправа_зліва знизу;</p></div>
+			<div class="header-margin5"><p>margin: зверху зправа знизу зліва та від'ємним значенням;</p></div>
+		</header>
+		<main>
+			<div class="main">
+				<div class="main-padding1"><p>значення padding "для початківців</p></div>
+				<div class="main-padding2"><p>padding: з_усіх_сторін;</p></div>
+				<div class="main-padding3"><p>padding: зверху_знизу зправа_зліва;</p></div>
+				<div class="main-padding4"><p>padding: зверху зправа_зліва знизу;</p></div>
+				<div class="main-padding5"><p>padding: зверху зправа знизу зліва;</p></div>
+				<img
+					src="img/padding.png"
+					alt="схема відступів"
+					class="main-img">
+				<img
+					src="img/padding2.png"
+					alt="схема внутрішнього відступу"
+					class="main-img2"
+				>
+			</div>
+			<div class="overflow">
+				<div class="visible">
+					<p>
+						visible - (за замовченням) Відображається усесь контент елемента, навіть за межами встановлених розмірів visible - (за
+						замовченням) Відображається усесь контент елемента, навіть за межами встановлених розмірів
+					</p>
+				</div>
+				<div class="hidden">
+					<p>hidden - Відображається тільки контент всередені елемента,hidden - Відображається тільки контент всередені елемента,</p>
+				</div>
+				<div class="clip">
+					<p>clip - Майже теж саме що й hidden. все інше буде схованоclip - Майже теж саме що й hidden. все інше буде сховано</p>
+				</div>
+				<div class="scroll">
+					<p>
+						scroll - Завжди додаються смужки прокрутки scroll - Завжди додаються смужки прокрутки scroll - Завжди додаються смужки
+						прокруткиscroll - Завжди додаються смужки прокрутки
+					</p>
+				</div>
+				<div class="auto">
+					<p>auto - Смужки прокрутки додаються лише за необхідністю auto</p>
+				</div>
+			</div>
+			<div class="vertical-align">
+				<img
+					src="img/vertical-align.png"
+					alt="вертикальне вирівнювання"
+					class="va-middle"
+				>
+				<span class="va-top">Верх</span>
+				<span class="va-middle">Середина</span>
+				<span class="va-bottom">Дно</span>
+			</div>
+			<div class="inlines">
+				<div class="inline">Це рядкові div`и</div>
+				<div class="inline">Це рядкові div`и</div>
+				<div class="inline">Це рядкові div`и</div>
+			</div>
+			<div>
+				<span class="block">Це блочні span`и</span>
+				<span class="block">Це блочні span`и</span>
+				<span class="block">Це блочні span`и</span>
+			</div>
+			<a
+				target="_blank"
+				href="https://www.google.com.ua/"
+				class="block-link"
+				>Це відцентроване посилання</a
+			>
+			<div class="consulting">
+				<div class="hero">
+					<img
+						src="img/consulting.jpg"
+						alt="Group of people  sit at the table"
+					>
+					<h1 class="hero-title">Why Us For International Business Management Consulting!</h1>
+					<p>
+						Completely synergized resourced taxings relationships premiers markets ultivate one-to-one customer service with robust ideas
+						dynamically innovated resources leveling customer service for state of the art customer service innovate product for reliable
+						supply engage web services cutting-edge deliverables.
+					</p>
+					<div class="proactivelly"><p>Proactively envisioned multimedia based expertise media growth superior collaboration.</p></div>
+					<p>
+						One-to-one customer service with robust ideas dynamically innovated resources for reliable supply engage web services
+						cutting-edge deliverables.
+					</p>
+				</div>
+				<div class="benefits">
+					<img
+						src="img/Photo.png"
+						alt="Plant on the table"
+					>
+					<div class="hero-block">
+						<h2 class="hero-subtitle">Our benefits</h2>
+						<p>
+							Incubate standards compliant <br>
+							channels benefits.
+						</p>
+						<ul class="list">
+							<li><div class="credibly">Credibly reintermediate backend</div></li>
+							<li><div class="holistically">Holistically foster superior</div></li>
+							<li>Distinctively exploit optimal</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="jewels">
+				<div class="jewels-text">
+					<h3 class="jewel">WHAT WE DO</h3>
+					<h2 class="jewels-title">We Develop Create Custom Jewels.</h2>
+					<p>
+						There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+						injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem
+						Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+					</p>
+				</div>
+				<div class="jewels-images">
+					<img
+						src="img/girl-jewel.jpg"
+						alt="Girl and jewels" class="girl-jewel"
+					>
+					<img
+						src="img/two-jewels.jpg"
+						alt="Two jewels"
+					>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="display-none">
+				<p>
+					none - Елемент не виводиться в браузер. Інші елементи займають його місце. Не приймає участь у обробці браузером. При потребі
+					виведемо (:
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
