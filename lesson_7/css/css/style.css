@@ -1,0 +1,383 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7d7d7d;
+	font-weight: 400;
+	line-height: 1.46;
+}
+
+.header,
+.footer {
+	margin: 0 auto;
+	text-align: center;
+	color: #40ddb6;
+	font-size: 50px;
+	font-weight: 500;
+}
+
+.header {
+	margin-bottom: 150px;
+}
+
+/*? ============================== Licencing ===================== */
+
+.licencing {
+	max-width: 1218px;
+	margin: 0px auto 150px;
+}
+.hero {
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.block-template {
+	margin: 0px 0px 16px 0px;
+	font-size: 0;
+}
+
+.rectangle {
+	display: inline-block;
+	margin-right: 6px;
+	width: 12px;
+	height: 12px;
+	background-color: #40ddb6;
+}
+
+.template {
+	display: inline-block;
+	font-size: 18px;
+	color: #37393f;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.hero-title,
+.title,
+.subtitle {
+	color: #37393f;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+}
+
+.hero-title {
+	font-size: 60px;
+	line-height: 1.21;
+}
+
+.title {
+	font-size: 40px;
+	line-height: 1.21;
+	margin-bottom: 11px;
+}
+
+.subtitle {
+	font-size: 30px;
+	line-height: 1;
+	margin-bottom: 8px;
+}
+
+.icons {
+	margin-bottom: 100px;
+}
+
+.icons p {
+	margin-bottom: 32px;
+}
+
+.license {
+	color: #40ddb6;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.photo {
+	margin-bottom: 100px;
+}
+
+.photo p {
+	margin-bottom: 24px;
+}
+
+.color ~ p {
+	color: #40ddb6;
+}
+
+.font {
+	color: #40ddb6;
+}
+
+/* ? ======================= Project information ============================ */
+.project-block {
+	max-width: 830px;
+	margin: 0 auto 150px;
+}
+
+.title-project {
+	color: #37393f;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.27;
+	margin-bottom: 13px;
+}
+
+.project-block p {
+	margin-bottom: 35px;
+}
+
+.title-project + p {
+	margin-bottom: 24px;
+}
+
+.printing,
+.lorem {
+	margin-bottom: 24px;
+}
+
+.list-u {
+	margin: 0px 0px 35px 0px;
+	padding-left: 43px;
+}
+
+.list-o {
+	margin: 0px 0px 35px 0px;
+	padding-left: 16px;
+}
+
+/* ? ====================== Clothing ================== */
+
+.clothing-container {
+	max-width: 1240px;
+	margin: 0px auto 100px;
+}
+
+.title-block {
+	font-size: 0;
+}
+
+.marker {
+	display: inline-block;
+	width: 6px;
+	height: 28px;
+	border-radius: 10px;
+	background: #8a33fd;
+	margin: 0px 15px -3px 0px;
+}
+
+.clothing-text {
+	padding-left: 21px;
+}
+
+.clothing-text p {
+	margin-bottom: 20px;
+}
+
+.clothing-title,
+.clothing-subtitle {
+	color: #3c4242;
+	font-family: "Core Sans C", sans-serif;
+	font-weight: 600;
+}
+
+.clothing-title {
+	display: inline-block;
+	font-size: 28px;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+	margin-bottom: 30px;
+}
+
+.clothing-subtitle {
+	font-size: 20px;
+	font-style: normal;
+	line-height: 1.68;
+	letter-spacing: 0.4px;
+	margin-bottom: 25px;
+}
+
+.text,
+.euphoria {
+	color: #807d7e;
+	font-family: "Causten", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.68;
+	letter-spacing: 0.4px;
+}
+
+.euphoria {
+	font-weight: 700;
+}
+
+.womens {
+	margin-bottom: 25px;
+}
+
+/* ? ======================== Jewellery ================ */
+
+.jewels {
+	max-width: 1103px;
+	margin: 0px auto 160px;
+	font-size: 0;
+}
+
+.jewels-title + p,
+.jewels-subtitle,
+.jewels-title {
+	font-family: "Cormorant Infant", serif;
+	font-weight: 700;
+}
+
+.jewels-texts {
+	display: inline-block;
+	width: 503px;
+	color: #606060;
+	font-size: 30px;
+	line-height: 1.4;
+	margin: 0px 65px 0px 0px;
+	padding: 70px 0px;
+}
+
+.jewels-subtitle {
+	color: #d58417;
+	font-size: 20px;
+	line-height: 1;
+	margin: 0px 0px 27px 0px;
+}
+
+.jewels-title {
+	color: #000;
+	font-size: 64px;
+	line-height: 1;
+	margin: 0px 0px 31px 0px;
+}
+
+.jewels-images {
+	display: inline-block;
+	width: 514px;
+	vertical-align: top;
+}
+
+.small-img {
+	display: inline-block;
+	width: 177px;
+	height: 336px;
+	vertical-align: middle;
+	margin-right: 30px;
+	border-radius: 235px;
+	border: 1px solid #502203;
+	font-size: 0;
+}
+.small-img img {
+	margin-left: -10px;
+	padding-top: 14px;
+	border-radius: 235px;
+}
+
+.big-img {
+	display: inline-block;
+	width: 307px;
+	height: 500px;
+	vertical-align: middle;
+	border-radius: 235px;
+	border: 1px solid #502203;
+}
+
+.big-img img {
+	margin-left: -10px;
+	padding-top: 12px;
+	border-radius: 235px;
+}
+
+/* ? ========================= Practice =========================== */
+
+.practice {
+	max-width: 1200px;
+	margin: 0 auto;
+	border: 50px solid blue;
+	outline: 50px solid yellow;
+	margin-bottom: 123px;
+	padding: 50px 50px;
+	opacity: 0.9;
+}
+
+.border {
+	border-top: 10px dotted #39b91f;
+	border-right: 10px double #db1682;
+	border-bottom: 10px dashed #1aaaec;
+	border-left: 10px solid #ddbf13;
+	outline: 10px solid #6adf27;
+	margin-bottom: 100px;
+}
+
+.border p {
+	margin-bottom: 25px;
+}
+
+.flag {
+	margin: 50px 150px;
+	vertical-align: middle;
+	border: 15px solid blue;
+	outline: 15px solid rgb(226, 223, 61);
+}
+
+.border-inline {
+	border: 10px solid #56cf52;
+	outline: 10px dashed #d12885;
+}
+
+.border-outline {
+	margin-bottom: 100px;
+	border: 5px dotted rgb(9, 12, 201);
+}
+
+.radius {
+	border: 7px double yellowgreen;
+	border-radius: 25px;
+	margin-bottom: 150px;
+}
+
+.border-radius {
+	border: 7px dashed rgb(48, 70, 4);
+	border-radius: 15px;
+}
+
+.radius img {
+	width: 225px;
+	height: 225px;
+	border-radius: 50%;
+}
+
+.shadow {
+	padding: 20px;
+	border: 7px dashed rgb(196, 14, 135);
+	box-shadow: -5px 7px 80px 15px #3432c5, inset 10px 5px 40px 10px rgb(212, 150, 108);
+	margin-bottom: 100px;
+}
+
+.trident img {
+	vertical-align: middle;
+	box-shadow: -5px 7px 80px 30px #d9e94a;
+	margin-bottom: 150px;
+}
+
+.trident-inline {
+	box-shadow: -5px 7px 80px 15px #3c6acf, inset 10px 5px 40px 10px rgb(233, 205, 48);
+	font-size: 30px;
+}
+
+.opacity-visibility {
+	font-size: 30px;
+}
+
+.opacity-visibility a {
+	opacity: 0.3;
+}
+
+.opacity-visibility p {
+	visibility: hidden;
+}
