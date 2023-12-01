@@ -1,0 +1,82 @@
+@import url("reset.css");
+
+body {
+	max-width: 1200px;
+	padding: 20px;
+	margin: 0px auto;
+	font-size: 20px;
+}
+
+.header {
+	text-align: center;
+	color: rgb(22, 56, 8);
+	font-size: 50px;
+	background: #ccc5c5;
+	margin-bottom: 50px;
+}
+
+.container {
+	max-width: 1200px;
+}
+
+.grey {
+	background-color: #37393f;
+}
+
+.grey,
+.white,
+.light-grey {
+	width: 100%;
+	padding: 50px;
+	margin-bottom: 50px;
+}
+
+.grey > p {
+	color: aliceblue;
+}
+
+.grey img,
+.white img,
+.light-grey img {
+	margin-right: 25px;
+	vertical-align: middle;
+}
+
+.grey > p:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.white {
+	border: 10px solid grey;
+}
+
+.white > p:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.light-grey {
+	background-color: #f4f4f4;
+}
+
+.light-grey > p:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.images {
+	margin-bottom: 50px;
+}
+
+.images > *:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.images img:first-of-type {
+	max-width: 1161px;
+}
+
+.footer {
+	text-align: center;
+	color: rgb(18, 49, 95);
+	font-size: 50px;
+	background: #ccccc5;
+}
