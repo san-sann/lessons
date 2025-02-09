@@ -621,7 +621,7 @@ body {
 /* ----------------------- Car -------------------------- */
 
 .page__car {
-	background: url("/img/road.webp") 0 0 / 100% no-repeat;
+	background: url("../img/road.webp") 0 0 / 100% no-repeat;
 	width: 1300px;
 	height: 1122px;
 	margin: 0 auto 100px;
