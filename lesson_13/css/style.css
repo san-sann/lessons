@@ -21,7 +21,6 @@ body {
 	left: 0;
 	background: linear-gradient(0deg, rgba(34, 195, 177, 1) 0%, rgba(253, 237, 45, 1) 100%);
 	z-index: 100;
-	margin-bottom: 10px;
 }
 
 /* ===================== Main ====================== */
@@ -621,8 +620,8 @@ body {
 /* ----------------------- Car -------------------------- */
 
 .page__car {
-	background: url("../img/road.webp") 0 0 / 100% no-repeat;
-	width: 1300px;
+	background: url("/img/road.webp") 0 0 / 100% no-repeat;
+	width: 1190px;
 	height: 1122px;
 	margin: 0 auto 100px;
 	position: relative;
