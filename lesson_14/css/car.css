@@ -1,0 +1,270 @@
+@import url("reset.css");
+
+@import url("animation.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+.page__animation {
+	position: relative;
+}
+
+/* ----------------------- Car -------------------------- */
+
+.page__car {
+	position: absolute;
+	width: 1500%;
+	height: 100%;
+	background: url("../img/road-1.jpg") center / 1920px 1020px repeat-x;
+	animation: road-run 60s linear infinite;
+}
+
+.car__container {
+	min-height: 1020px;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+[class*="__container"] {
+	max-width: 1650px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.car__drone {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	top: -300px;
+	left: -900px;
+}
+
+.drone__box {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -100px;
+	left: -250px;
+	background: url("../img/drone1.png") center / 300px no-repeat;
+	animation:
+		drone 5s linear 2s forwards,
+		drone1 1s linear 9s forwards;
+}
+
+.drone__boom {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -75px;
+	left: 130px;
+	background: url("../img/boom.png") center / 300px no-repeat;
+	opacity: 0;
+	animation:
+		boom 3s linear 7s,
+		scale 3s linear 7s alternate;
+}
+
+.car__panzer {
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	top: 33%;
+	left: 50%;
+	animation: panzer 2s linear infinite alternate;
+}
+
+/* * ---------------------- turret ----------------------- */
+
+.panzer__turret {
+	font-size: 0;
+}
+
+[class*="__item"] {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #383d38;
+	position: absolute;
+}
+
+.turret__item6 {
+	width: 350px;
+	height: 10px;
+	top: 110px;
+	left: 225px;
+	background: #454246;
+}
+
+.turret__item2 {
+	width: 200px;
+	height: 50px;
+	top: 60px;
+	left: 246px;
+	background: #5d5b5e;
+	transform: skew(-40deg);
+	border-radius: 10px 90px 25px 100px;
+}
+
+.turret__item3 {
+	width: 60px;
+	height: 25px;
+	top: 70px;
+	left: 230px;
+	background: #939094;
+	transform: skew(13deg);
+	border-radius: 10px 0 0 0;
+	animation:
+		barrel-up 1s linear 6s 1 forwards,
+		barrel-down 1s linear 10s 1 forwards;
+}
+
+.turret__barrel {
+	width: 150px;
+	height: 8px;
+	top: 8px;
+	left: -130px;
+	background: linear-gradient(90deg, rgba(148, 154, 149, 1) 25%, rgba(74, 80, 80, 1) 76%);
+	border-radius: 2px;
+	position: absolute;
+	animation: barrel-reverse 0.1s 7s 5;
+}
+
+.turret__barrel::after {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: -18px;
+	left: -29px;
+	opacity: 0;
+	background: url("../img/boom.png") center / 50px no-repeat;
+	animation:
+		fire 0.1s 7s 8 alternate,
+		fire-opacity 1s 6.9s forwards;
+}
+
+.turret__item4 {
+	width: 60px;
+	height: 25px;
+	top: 104px;
+	left: 167px;
+	background: #939094;
+	border-radius: 10px 10px 0 0;
+}
+
+.turret__item5 {
+	width: 60px;
+	height: 25px;
+	top: 36px;
+	left: 353px;
+	background: #939094;
+	border-radius: 39px 10px 0 0;
+}
+
+.panzer__body {
+	width: 600px;
+	height: 80px;
+	position: absolute;
+	top: 120px;
+	left: -2px;
+}
+
+.panzer__squares {
+	font-size: 0;
+	width: 600px;
+	height: 60px;
+}
+
+.panzer__squares div:first-child {
+	transform: translate(30px) skew(-46deg);
+}
+
+.panzer__squares div:last-child {
+	border-radius: 0 10px 0 0;
+}
+
+.panzer__square {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border: 1px solid rgb(56, 61, 56);
+	background: #807c81;
+}
+
+.panzer__line {
+	width: 600px;
+	height: 20px;
+	background: #807c81;
+	border: 1px solid rgb(56, 61, 56);
+}
+
+.bottom {
+	width: 600px;
+	height: 95px;
+	/* background: #474447; */
+	font-size: 0;
+}
+
+.bottom__section {
+	display: inline-block;
+	width: 100px;
+	height: 65px;
+	background: #615e61;
+	border: 1px solid rgb(56, 61, 56);
+	vertical-align: top;
+	border-bottom: 15px solid rgb(56, 56, 75);
+}
+
+.bottom div:first-child {
+	width: 250px;
+	height: 45px;
+	background: #615e61;
+	border: 1px solid #383d38;
+	border-radius: 0 0 0 45px;
+	border-bottom: 15px solid rgb(56, 56, 75);
+}
+
+.bottom div:last-child {
+	width: 250px;
+	height: 55px;
+	background: #615e61;
+	border: 1px solid rgb(56, 61, 56);
+	border-radius: 0 0 15px 0;
+	border-bottom: 15px solid rgb(56, 56, 75);
+}
+
+.wheels {
+	position: relative;
+}
+
+.wheels__item {
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(148, 154, 149, 1) 12%, rgba(74, 80, 76, 1) 38%);
+	top: -85px;
+	border: 15px solid #2e2c2c;
+	outline: 7px dashed rgb(17, 27, 27);
+	animation: wheel 3s linear infinite;
+}
+
+.wheels div:first-child {
+	left: 40px;
+}
+
+.wheels div:nth-child(2) {
+	left: 170px;
+}
+
+.wheels div:nth-child(3) {
+	left: 340px;
+}
+
+.wheels div:last-child {
+	left: 470px;
+}
