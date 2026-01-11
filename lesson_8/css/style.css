@@ -1,0 +1,538 @@
+/* =================================== HEADER ===========================  */
+
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7d7d7d;
+}
+
+.header {
+	max-width: 1200px;
+	margin: 50px auto 50px;
+	font-size: 30px;
+	text-align: center;
+	color: rgb(141, 27, 107);
+}
+
+.scroll {
+	background: linear-gradient(0deg, rgba(68, 169, 233, 1) 0%, rgba(238, 229, 88, 1) 100%);
+	min-height: 100px;
+}
+
+.fixed {
+	min-height: 100px;
+	background-image: url("../img/flag.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: top;
+}
+
+/*? =================== PRACTICE ===================================== */
+
+.practice {
+	max-width: 1200px;
+	margin: 0 auto 145px;
+	color: black;
+}
+
+.repeats {
+	color: rgb(53, 115, 196);
+	margin-bottom: 100px;
+}
+
+.repeats > li {
+	margin-bottom: 20px;
+}
+
+.repeat {
+	background-image: url("../img/repeat.jpg");
+}
+
+.no-repeat {
+	background-image: url("../img/repeat.jpg");
+	background-repeat: no-repeat;
+}
+
+.repeat-x {
+	background-image: url("../img/repeat.jpg");
+	background-repeat: repeat-x;
+}
+
+.repeat-y {
+	background-image: url("../img/repeat.jpg");
+	background-repeat: repeat-y;
+}
+
+.repeat-space {
+	background-image: url("../img/repeat.jpg");
+	background-repeat: space;
+}
+
+.repeat-round {
+	background-image: url("../img/repeat.jpg");
+	background-repeat: round;
+}
+
+.position {
+	color: indigo;
+}
+
+.position > li {
+	margin-bottom: 20px;
+}
+
+.left-top {
+	background: url("../img/repeat.jpg") top left no-repeat;
+}
+
+.left {
+	background: url("../img/repeat.jpg") 0 50% no-repeat;
+}
+
+.left-bottom {
+	background: url("../img/repeat.jpg") 0 100% no-repeat;
+}
+
+.center-top {
+	background: url("../img/repeat.jpg") 50% 0 no-repeat;
+}
+
+.center {
+	background: url("../img/repeat.jpg") 50% no-repeat;
+}
+
+.center-bottom {
+	background: url("../img/repeat.jpg") 50% 100% no-repeat;
+}
+
+.right-top {
+	background: url("../img/repeat.jpg") 100% 0 no-repeat;
+}
+
+.right-center {
+	background: url("../img/repeat.jpg") 100% 50% no-repeat;
+}
+
+.right-bottom {
+	background: url("../img/repeat.jpg") 100% 100% no-repeat;
+}
+
+.cossacks {
+	background: url("../img/repeat.jpg") 500px 70px no-repeat, url("../img/repeat1.jpg") 200px 30px no-repeat,
+		url("../img/repeat2.jpg") 700px 80px no-repeat, url("../img/repeat3.jpg") 1000px 10px no-repeat;
+}
+
+.size > li {
+	border: 3px solid rgb(182, 36, 157);
+	margin-bottom: 15px;
+	min-height: 300px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.width {
+	background: url("../img/map.jpg") 0 0/300px auto no-repeat;
+}
+
+.height {
+	background: url("../img/map.jpg") 0 0 / auto 250px no-repeat;
+}
+
+.contain {
+	background: url("../img/map.jpg") 0 0 / contain no-repeat;
+}
+
+.cover {
+	background: url("../img/map1.jpg") 0 0 / cover no-repeat;
+}
+
+.tracking {
+	background: url("../img/map1.jpg") 0 0/ 100% 100% no-repeat;
+}
+
+.sizes {
+	background: url("../img/map1.jpg") 0 0/ 200px 150px no-repeat;
+}
+
+.multi {
+	border: 3px solid rgb(170, 26, 26);
+	margin-bottom: 150px;
+	min-height: 400px;
+	text-align: center;
+	font-size: 30px;
+	background: url("../img/trident.png") 20px 30px / 50px 100px no-repeat, url("../img/repeat.jpg") 50% no-repeat,
+		url("../img/map.jpg") 100% 0 no-repeat, url("../img/map1.jpg") 0 0 / cover no-repeat;
+}
+
+/* ! ============================= HOME WORK №8 ========================== */
+
+/* ? ------------------------------  Welcome Whitecollar -------------------- */
+
+.welcome-container {
+	margin: 0 auto 150px;
+	max-width: 742px;
+	padding: 0 0 0 69px;
+}
+
+.welcome-block {
+	font-size: 0;
+	margin-bottom: 16px;
+}
+
+.welcome-block > span {
+	display: inline-block;
+	margin-right: 6px;
+	width: 12px;
+	height: 12px;
+	background-color: #40ddb6;
+}
+
+.sub-subtitle {
+	display: inline-block;
+	color: #37393f;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.22;
+}
+
+.title {
+	max-width: 413px;
+	color: #37393f;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin: 0px 0px 20px 0px;
+}
+
+.care-text {
+	line-height: 1.46;
+	margin: 0px 0px 20px 0px;
+}
+
+.care-text > p {
+	margin: 0px 0px 15px 0px;
+}
+
+.strategy {
+	margin: 0px 0px 43px 0px;
+}
+
+.strategy > li {
+	background: url("../img/bird.svg") 0 3px no-repeat;
+	margin: 0px 0px 23px 0px;
+	padding: 0 0 0 35px;
+	max-width: 391px;
+	color: #37393f;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.65;
+}
+
+.icons {
+	font-size: 0;
+	margin: 0px 0px 37px 0px;
+}
+
+.experience {
+	display: inline-block;
+	padding: 31px 32px 32px;
+	max-width: 295px;
+	margin: 0px 21px 0px 0px;
+	border: 1px solid #e3e3e3;
+}
+
+.experience-block {
+	background: url("../img/experience.svg") 0 0 no-repeat;
+	padding: 0 0 0 58px;
+}
+
+.icons-title {
+	color: #37393f;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin: 0px 0px 3px 0px;
+}
+
+.icons-title + p {
+	font-size: 16px;
+	line-height: 1.35;
+}
+
+.awards {
+	display: inline-block;
+	margin: 0px 60px 0px 0px;
+	padding: 31px 37px 32px;
+	max-width: 297px;
+	border: 1px solid #e3e3e3;
+}
+
+.awards-block {
+	background: url("../img/awards.svg") 0 0 no-repeat;
+	padding: 0 0 0 56px;
+}
+
+.button-block {
+	display: inline-block;
+	padding: 21px 27px 22px 27px;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.22;
+	text-transform: capitalize;
+	background: #6b77e5;
+}
+
+/* ? ------------------------------  Latest Projects -------------------- */
+
+.latest-container {
+	max-width: 1220px;
+	margin: 0px auto 150px;
+}
+
+.discover {
+	margin: 0px auto 47px;
+	text-align: center;
+	max-width: 852px;
+}
+
+.latest-block > span {
+	display: inline-block;
+	margin-right: 6px;
+	width: 12px;
+	height: 12px;
+	background-color: #40ddb6;
+}
+
+.latest-block {
+	margin: 0px 0px 14px 0px;
+}
+
+.latest-title {
+	color: #37393f;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin: 0px 0px 14px 0px;
+}
+
+.latest-title + p {
+	line-height: 1.46;
+}
+
+.upper-block {
+	margin: 0px 0px 51px 0px;
+	font-size: 0;
+}
+
+.image-block {
+	width: 384px;
+	display: inline-block;
+}
+
+.space {
+	margin: 0px 34px 0px 0px;
+}
+
+.image {
+	width: 100%;
+	height: 501px;
+	margin: 0px 0px 24px 0px;
+}
+
+.image-1 {
+	background: url("../img/monitor.jpg") 0 0 no-repeat;
+}
+
+.image-2 {
+	background: url("../img/man.jpg") 0 0 no-repeat;
+}
+.image-3 {
+	background: url("../img/phone.jpg") 0 0 no-repeat;
+}
+.image-4 {
+	background: url("../img/woman.jpg") 0 0 no-repeat;
+}
+.image-5 {
+	background: url("../img/diagram.jpg") 0 0 no-repeat;
+}
+.image-6 {
+	background: url("../img/coffee.jpg") 0 0 no-repeat;
+}
+
+.images-title {
+	color: #37393f;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 10px;
+}
+
+.date {
+	font-size: 14px;
+	line-height: 1.46;
+	background: url("../img/calendar.svg") 0 50% no-repeat;
+	padding: 0px 0px 0px 26px;
+}
+
+.lower-block {
+	font-size: 0;
+}
+
+/* ? ==================================== EUPHORIA ============================ */
+
+.clothing-container {
+	max-width: 1240px;
+	margin: 0px auto 100px;
+}
+
+.clothing-title,
+.subtitle {
+	font-family: "Core Sans C", sans-serif;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.clothing-title {
+	color: #3c4242;
+	font-size: 28px;
+	letter-spacing: 0.56px;
+	margin: 0px 0px 25px 0px;
+	padding: 0 0 0 21px;
+	background: url("../img/violet.png") 0 0 no-repeat;
+}
+
+.subtitle {
+	color: #807d7e;
+	font-size: 20px;
+	letter-spacing: 0.4px;
+	margin: 0px 0px 25px 0px;
+}
+
+.see {
+	margin: 0px;
+}
+
+.clothing-content,
+.euphoria {
+	color: #807d7e;
+	font-family: "Causten", sans-serif;
+	font-size: 20px;
+	line-height: 1.68;
+	letter-spacing: 0.4px;
+}
+
+.euphoria {
+	font-weight: 700;
+}
+
+.clothing-content {
+	font-weight: 400;
+	padding: 0 0 0 21px;
+}
+
+.clothing-content > p {
+	margin: 0px 0px 20px 0px;
+}
+
+.our {
+	margin: 0px 0px 25px 0px;
+}
+
+/* ? ============================= FASHION ======================================= */
+
+.fashion-container {
+	max-width: 1240px;
+	height: 640px;
+	margin: 0px auto 100px;
+	font-size: 0;
+}
+
+.fashion-block {
+	display: inline-block;
+	width: 614px;
+	height: 100%;
+	padding: 183px 74px 175px;
+	background: url("../img/fashion-text.jpg") 0 0 no-repeat;
+	vertical-align: middle;
+}
+
+.fashion-title {
+	color: #fff;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 1.47;
+	letter-spacing: 0.208px;
+	margin-bottom: 30px;
+}
+
+.fashion-title + p {
+	color: #fff;
+	font-family: "Causten", sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	margin-bottom: 50px;
+}
+
+.fashion-button {
+	width: 168px;
+	height: 46px;
+	border-radius: 8px;
+	background: #fff;
+	padding: 12px 44px;
+}
+
+.fashion-button > a {
+	color: #3c4242;
+	font-family: "Causten", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.22;
+	white-space: nowrap;
+}
+
+.fashion-photo {
+	display: inline-block;
+	width: 626px;
+	height: 100%;
+	background: url("../img/fashion-photo.jpg") 0 0 no-repeat;
+	vertical-align: middle;
+}
+
+/* ====================================== FOOTER ================================  */
+
+.footer {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-size: 30px;
+	text-align: center;
+}
+
+.footer-yellow {
+	background-color: yellow;
+	background-image: url("../img/trident.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0;
+}
+
+.footer-blue {
+	background-color: hsla(207, 72%, 42%, 0.5);
+	background-image: url("../img/trident.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+	margin: 0;
+}
