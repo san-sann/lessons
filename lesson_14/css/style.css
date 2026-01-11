@@ -1,0 +1,558 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+@import url("animation.css");
+
+/* Основні стилі */
+body {}
+
+.wrapper {
+	padding: 50px;
+	overflow: clip;
+	min-height: 100%;
+}
+
+[class*="__container"] {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 15px 15px;
+}
+
+.header,
+.footer {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	background: rgb(238, 174, 202);
+	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+	z-index: 1;
+}
+
+.header {
+	top: 0;
+	left: 0;
+}
+
+.page--margin-top {
+	margin-top: 100px;
+}
+
+.transition__duration,
+.transition__property,
+.transition__delay,
+.transition__timing-function {
+	margin: 0 auto 100px;
+	text-align: center;
+	width: 100%;
+}
+
+[class*="__title"] {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 40px;
+	color: #242847;
+	letter-spacing: 3px;
+	word-spacing: 10px;
+}
+
+[class*="__links"] {
+	margin: 30px auto 30px;
+}
+
+[class*="__link"] {
+	display: inline-block;
+	text-transform: uppercase;
+	background: rgb(207, 115, 166);
+	border-radius: 15px;
+	padding: 15px;
+	letter-spacing: 3px;
+	position: relative;
+	top: 0;
+	box-shadow: 0px 6px 0px black;
+}
+
+[class*="__link"]:hover {
+	top: 3px;
+	box-shadow: 0px 3px 0px black;
+}
+
+[class*="__link"]:active {
+	top: 5px;
+	box-shadow: 0px 0px 0px black,
+		inset 0px 0px 5px grey;
+}
+
+[class*="__container"] a:not(:last-child) {
+	margin-right: 160px;
+}
+
+[class*="__items"] [class*="__item"] {
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(0deg, rgba(126, 195, 34, 1) 0%, rgba(227, 240, 64, 1) 92%);
+	font-size: 20px;
+}
+
+[class*="__item"] {
+	display: inline-block;
+	position: relative;
+	border-radius: 20px;
+	font-size: 18px;
+}
+
+[class*="__example"] {
+	width: 50px;
+	height: 155px;
+	background: radial-gradient(circle, rgba(233, 169, 64, 1) 0%, rgba(228, 122, 84, 0.9304096638655462) 100%);
+	position: absolute;
+	top: 44px;
+	left: 75px;
+	border-radius: 20px;
+}
+
+/* ? ========================== TRANSITION =========================== */
+
+/* * -------------------------- duration -------------------------------- */
+
+.duration-transition__items li:first-child:hover .duration-transition__example {
+	transform: rotate(38deg);
+	transform-origin: 30px 140px;
+}
+
+.duration-transition__items li:nth-child(2):hover .duration-transition__example {
+	transform: rotate(38deg);
+	transform-origin: 30px 140px;
+	transition-duration: 0.3s;
+}
+
+.duration-transition__items li:nth-child(3):hover .duration-transition__example {
+	transform: rotate(38deg);
+	transform-origin: 30px 140px;
+	transition-duration: 1s;
+}
+
+.duration-transition__items li:nth-child(4) .duration-transition__example {
+	transform-origin: 30px 140px;
+	transition-duration: 1s;
+}
+
+.duration-transition__items li:nth-child(4):hover .duration-transition__example {
+	transform: rotate(38deg);
+	transform-origin: 30px 140px;
+	transition-duration: 0s;
+}
+
+.duration-transition__items li:last-child .duration-transition__example {
+	transform-origin: 30px 140px;
+	transition-duration: 1s;
+}
+
+.duration-transition__items li:last-child:hover .duration-transition__example {
+	transform: rotate(38deg);
+	transform-origin: 30px 140px;
+	transition-duration: 1s;
+}
+
+/* * ---------------------- property ------------------ */
+
+.property-transition__items li:first-child:hover .property-transition__example {
+	transform: rotate(38deg);
+	transform-origin: 30px 140px;
+	height: 50px;
+	border-radius: 50%;
+	transition-duration: 1s;
+}
+
+.property-transition__items li:first-child .property-transition__example {
+	transition-duration: 1s;
+}
+
+.property-transition__items li:nth-child(2):hover .property-transition__example {
+	transform: rotate(38deg);
+	transform-origin: 30px 140px;
+	transition-duration: 1s;
+}
+
+.property-transition__items li:nth-child(2) .property-transition__example {
+	transition-duration: 1s;
+}
+
+.property-transition__items li:nth-child(3):hover .property-transition__example {
+	height: 50px;
+	transition-duration: 1s;
+}
+
+.property-transition__items li:nth-child(3) .property-transition__example {
+	transition-duration: 1s;
+}
+
+.property-transition__items li:nth-child(4) .property-transition__example {
+	transition-duration: 1s;
+}
+
+.property-transition__items li:nth-child(4):hover .property-transition__example {
+	transform: rotate(38deg);
+	transform-origin: 30px 140px;
+	height: 50px;
+	transition-property: height, transform;
+	transition-duration: 3s, 1s;
+}
+
+.property-transition__items li:last-child .property-transition__example {
+	transition-duration: 1s;
+	background: darksalmon;
+}
+
+.property-transition__items li:last-child:hover .property-transition__example {
+	transform: rotate(38deg);
+	transform-origin: 30px 140px;
+	height: 50px;
+	border-radius: 50%;
+	transition-property: height, transform, background;
+	transition-duration: 1s, 1s, 5s;
+	background: rgb(230, 39, 220);
+}
+
+/* * ----------------- delay ---------------- */
+
+.delay-transition__items:hover .delay-transition__example {
+	transform: rotate(38deg);
+	transform-origin: 30px 140px;
+	transition-duration: 1s;
+}
+
+.delay-transition__example {
+	transition-duration: 0.4s;
+}
+
+.delay-transition__items li:nth-child(1) .delay-transition__example {
+	transition-delay: 0s;
+}
+
+.delay-transition__items li:nth-child(2) .delay-transition__example {
+	transition-delay: 0.2s;
+}
+
+.delay-transition__items li:nth-child(3) .delay-transition__example {
+	transition-delay: 0.4s;
+}
+
+.delay-transition__items li:nth-child(4) .delay-transition__example {
+	transition-delay: 0.6s;
+}
+
+.delay-transition__items li:nth-child(5) .delay-transition__example {
+	transition-delay: 0.8s;
+}
+
+/* * ---------------- timing-function -------------- */
+
+.timing-function-transition__items {
+	margin-bottom: 50px;
+}
+
+.timing-function-transition__example {
+	width: 50px;
+	height: 155px;
+	background: radial-gradient(circle, rgba(233, 169, 64, 1) 0%, rgba(228, 122, 84, 0.9304096638655462) 100%);
+	position: absolute;
+	top: 44px;
+	left: 0;
+	border-radius: 20px;
+}
+
+.timing-function-transition__items li:nth-child(1):hover .timing-function-transition__example {
+	top: -80px;
+	left: 140px;
+	transform: rotate(180deg);
+	transform-origin: 30px 140px;
+	transition-duration: 1s;
+}
+
+.timing-function-transition__items li:nth-child(2):hover .timing-function-transition__example {
+	top: -80px;
+	left: 140px;
+	transform: rotate(180deg);
+	transform-origin: 30px 140px;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+.timing-function-transition__items li:nth-child(3):hover .timing-function-transition__example {
+	top: -80px;
+	left: 140px;
+	transform: rotate(180deg);
+	transform-origin: 30px 140px;
+	transition-duration: 1s;
+	transition-timing-function: cubic-bezier(0.75, 0.99, 0.21, 0.01);
+}
+
+.timing-function-transition__items li:nth-child(4):hover .timing-function-transition__example {
+	top: -80px;
+	left: 140px;
+	transform: rotate(180deg);
+	transform-origin: 30px 140px;
+	transition-duration: 1s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.timing-function-transition__items li:nth-child(5):hover .timing-function-transition__example {
+	top: -80px;
+	left: 140px;
+	transform: rotate(180deg);
+	transform-origin: 30px 140px;
+	transition-duration: 1s;
+	transition-timing-function: cubic-bezier(0.75, -1, 0.21, -1);
+}
+
+/* * -------------------- CLOCK -------------- */
+
+.timing-function-transition__timer,
+.animation__timer {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto 100px;
+	position: relative;
+}
+
+.timer__subtitle {
+	margin-bottom: 17px;
+	font-size: 20px;
+}
+
+.timer__block {
+	width: 100%;
+}
+
+.timer__center {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 171px;
+	left: 136px;
+	border-radius: 50%;
+	background: #000;
+	opacity: 0.9;
+}
+
+.timer__cover {
+	position: absolute;
+	width: 33px;
+	height: 33px;
+	top: 0px;
+	left: -3px;
+	border-radius: 50%;
+	background: #000;
+}
+
+.timer__seconds {
+	position: absolute;
+	width: 4px;
+	height: 170px;
+	top: -20.5px;
+	left: 13.5px;
+	border-radius: 5px;
+	transform: rotate(180deg);
+	transform-origin: 1.2px 35.7px;
+	background: rgb(185, 22, 172);
+}
+
+.timing-function-transition__timer:hover .timer__seconds {
+	transform: rotate(3600deg);
+	transform-origin: 1.2px 35.7px;
+	transition-duration: 600s;
+	transition-timing-function: steps(600, start);
+}
+
+.timer__minutes {
+	position: absolute;
+	width: 8px;
+	height: 146px;
+	top: -12px;
+	left: 11px;
+	border-radius: 5px;
+	background: rgb(36, 94, 71);
+	transform: rotate(180deg);
+	transform-origin: 3px 28px;
+}
+
+.timing-function-transition__timer:hover .timer__minutes {
+	transform: rotate(360deg);
+	transform-origin: 3px 28px;
+	transition-duration: 1800s;
+	transition-timing-function: steps(900, start);
+}
+
+.timer__hours {
+	position: absolute;
+	width: 10px;
+	height: 113px;
+	top: -8px;
+	left: 10px;
+	border-radius: 5px;
+	background: rgb(26, 20, 65);
+	transform: rotate(-90deg);
+	transform-origin: 5px 25px;
+}
+
+.timing-function-transition__timer:hover .timer__hours {
+	transform: rotate(360deg);
+	transform-origin: 3px 28px;
+	transition-duration: 56000s;
+	transition-timing-function: steps(6000, start);
+}
+
+/* ? ========================== animation =========================== */
+
+.timer__center--animation {
+	top: 136px;
+}
+
+.animation__timer:hover .timer__second {
+	animation-play-state: paused;
+}
+
+.animation__timer:hover .timer__minute {
+	animation-play-state: paused;
+}
+
+.animation__timer:hover .timer__hour {
+	animation-play-state: paused;
+}
+
+.timer__second {
+	position: absolute;
+	width: 4px;
+	height: 170px;
+	top: -20.5px;
+	left: 13.5px;
+	border-radius: 5px;
+	transform-origin: 1.2px 35.7px;
+	background: rgb(185, 22, 172);
+	animation-name: sec;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-play-state: running;
+	animation-direction: normal;
+}
+
+.timer__minute {
+	position: absolute;
+	width: 8px;
+	height: 146px;
+	top: -12px;
+	left: 11px;
+	border-radius: 5px;
+	background: rgb(36, 94, 71);
+	transform-origin: 3px 28px;
+	animation-name: min;
+	animation-duration: 3600s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-play-state: running;
+	animation-direction: normal;
+}
+
+.timer__hour {
+	position: absolute;
+	width: 10px;
+	height: 113px;
+	top: -8px;
+	left: 10px;
+	border-radius: 5px;
+	background: rgb(26, 20, 65);
+	transform-origin: 5px 25px;
+	animation-name: hour;
+	animation-duration: 86400s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-play-state: running;
+	animation-direction: normal;
+}
+
+.newton {
+	width: 500px;
+	height: 300px;
+	margin: 0 auto 100px;
+	position: relative;
+	border-top: 10px solid #aaa3a3;
+	border-radius: 10px;
+}
+
+.newton__item {
+	position: absolute;
+	top: -2px;
+	height: 100%;
+	width: 20%;
+	transform-origin: top;
+}
+
+.newton:hover .newton__item {
+	animation-play-state: paused;
+}
+
+.newton__item::before {
+	content: "";
+	width: 5px;
+	margin-left: -2.5px;
+	background: linear-gradient(60deg,
+			#999 5%,
+			#fff 10%,
+			#ccc 30%,
+			#ddd 50%,
+			#ccc 70%,
+			#fff 80%,
+			#999 95%);
+	height: 80%;
+	position: absolute;
+	left: 50%;
+	border-radius: 5px;
+}
+
+.newton__item::after {
+	content: "";
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(45deg,
+			#999 5%,
+			#fff 10%,
+			#ccc 30%,
+			#ddd 50%,
+			#ccc 70%,
+			#fff 80%,
+			#999 95%);
+	position: absolute;
+	bottom: 0;
+	border-radius: 50%;
+}
+
+.newton__item:first-child {
+	left: 0;
+	animation: left-item 1s infinite ease-in alternate;
+}
+
+.newton__item:nth-child(2) {
+	left: 20%;
+}
+
+.newton__item:nth-child(3) {
+	left: 40%;
+}
+
+.newton__item:nth-child(4) {
+	left: 60%;
+}
+
+.newton__item:last-child {
+	right: 0;
+	animation: right-item 1s infinite ease-out alternate;
+}
+
+.footer {
+	bottom: 0;
+	left: 0;
+}
