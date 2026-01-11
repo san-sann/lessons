@@ -1,0 +1,102 @@
+@import url("reset.css");
+
+/* /////////////////////////////
+		HEADER     
+///////////////////////////// */
+
+[href*="#"] {
+	color: yellowgreen;
+}
+
+/* ////////////////////////
+		MAIN   
+////////////////////////		 */
+
+
+h1 {
+	color: blue;
+}
+
+
+h2,
+h3 {
+	color: indigo;
+}
+
+#massage,
+#kinds,
+#influence {
+	color: red;
+	
+}
+ #history,
+ #methods {
+	color: green;
+ }
+
+/* -------------------History-------------------- */
+
+ #history.history-massage {
+	color: violet;
+ }
+
+ .all-history {
+	color: gold;
+ }
+
+div.history-common {
+	color: gray;
+}
+
+.medium-age.renesans {
+	color: lightblue;
+}
+
+/* --------------------Kinds of massages----------------- */
+
+.kinds-massage .phisiology {
+	color: seagreen;
+}
+
+
+.kinds-massages li {
+	color: lawngreen;
+}
+
+[class*=techology] {
+	color: hotpink;
+}
+
+
+/* ------------Influence---------------------- */
+
+.influences p {
+	color: lightcoral;
+}
+
+.warning {
+	color: blue !important;
+}
+
+/* ------------methods---------------------------- */
+
+.stroking + li {
+	color: crimson;
+}
+
+ .friction ~ li {
+	color: saddlebrown;
+ }
+ 
+ 
+ .kinds-massages {
+	color: green;
+ }
+ 
+ /* ////////////////////////
+ 		FOOTER    
+/////////////////////////		 */
+
+.sallons * {
+	color: sienna;
+}
